@@ -4,6 +4,8 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import wakeReliefLogo from '../public/wr-logo-sized.png'
 import wakeReliefHero from '../public/wr_hero.png'
+import wrAbout from '../public/wr_about.png'
+
 
 
 const Home: NextPage = () => {
@@ -45,11 +47,42 @@ const Home: NextPage = () => {
         </div>
 
         <div className={styles.infobox}>
-          <div>
-            <div>
-              We're Open
+          <div className={styles.infobox_hours}>
+
+            <div >
+              <h1>We're Open</h1>
+              <div className={styles.open_hours}>
+                <div>Monday</div>
+                <div className={styles.hours_line_spacer}></div>
+                <div>1:00 pm - 3:00 pm</div>
+              </div>
+              <div className={styles.open_hours}>
+                <div>Tuesday</div>
+                <div className={styles.hours_line_spacer}></div>
+                <div>1:00 pm - 3:00 pm</div>
+              </div>
+              <div className={styles.open_hours}>
+                <div>Wednesday</div>
+                <div className={styles.hours_line_spacer}></div>
+                <div>10:00 am - 12:00 pm</div>
+              </div>
+              <div className={styles.open_hours}>
+                <div>Every 4th Saturday</div>
+                <div className={styles.hours_line_spacer}></div>
+                <div>10:00 am - 12:00 pm</div>
+              </div>
+              <p>Clients may come once every 30 days</p>
+              <p>* Wake Relief will be closed on Federal Holidays.</p>
+              <p>* Wake Relief follows Wake County Schools inclement weather policy. </p>
             </div>
-            <div>Give us a Call</div>
+
+            <div className={styles.phone_number}>
+              <div>
+                <h1> Give us a Call</h1>
+                <h2>(919) 833 - 6400</h2>
+              </div>
+              <p>Please leave a message for Wake Relief and someone will return your call as soon as possible.</p>
+            </div>
           </div>
           <div className={styles.infobox_map}>
             <div className={styles.infobox_map_meta}>
@@ -57,9 +90,66 @@ const Home: NextPage = () => {
               <p>Saint Savior's Center (Bottom Floor)</p>
               <p>616 Tucker Street, <br />
                 Raleigh, NC 27603</p>
-             <a>Directions on Google Maps</a>
+              <a>Directions on Google Maps</a>
             </div>
           </div>
+        </div>
+        {/* end infobox */}
+
+        <div className={styles.about_section}>
+          <div>
+            <Image
+              src={wrAbout}
+              alt="About Photo"
+
+            // blurDataURL="data:..." 
+            // placeholder="blur" // Optional blur-up while loading
+            />
+          </div>
+          <div>
+            <h1>What is Wake Relief?</h1>
+            <p>Since 1975, Wake Relief has provided food to Wake County residents in emergency situations. Wake Relief DOES NOT CHARGE for the food provided. Local agencies, churches, and other outreach organizations may refer clients or individuals may reach out to us if in need. Wake Relief provides a week's worth of nutritional groceries based on the size of the family.</p>
+          </div>
+        </div>
+
+        <div className={styles.section_learn_more}>
+          <h1>Want to Learn More?</h1>
+          <p>Click through the sections below to see how we help our community</p>
+
+          {/* carousel */}
+          <div className={styles.carousel}>
+            <div className={styles.carousel_item}>
+              <Image
+                src={wrAbout}
+                alt="About Photo"
+
+              // blurDataURL="data:..." 
+              // placeholder="blur" // Optional blur-up while loading
+              />
+              <h2>Who We Are</h2>
+            </div>
+            <div className={styles.carousel_item}>
+              <Image
+                src={wrAbout}
+                alt="About Photo"
+
+              // blurDataURL="data:..." 
+              // placeholder="blur" // Optional blur-up while loading
+              />
+              <h2>Who Helps Us</h2>
+            </div>
+            <div className={styles.carousel_item}>
+              <Image
+                src={wrAbout}
+                alt="About Photo"
+
+              // blurDataURL="data:..." 
+              // placeholder="blur" // Optional blur-up while loading
+              />
+              <h2>How You Can Help</h2>
+            </div>
+          </div>
+
         </div>
 
 
