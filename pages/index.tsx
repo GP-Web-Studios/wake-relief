@@ -1,10 +1,10 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import LearnMore from '../components/LearnMore'
 import wakeReliefLogo from '../public/wr-logo-sized.png'
-import wakeReliefHero from '../public/wr_hero.png'
 import wrAbout from '../public/wr_about.png'
+import styles from '../styles/Home.module.scss'
 
 
 
@@ -101,9 +101,6 @@ const Home: NextPage = () => {
             <Image
               src={wrAbout}
               alt="About Photo"
-
-            // blurDataURL="data:..." 
-            // placeholder="blur" // Optional blur-up while loading
             />
           </div>
           <div>
@@ -115,80 +112,9 @@ const Home: NextPage = () => {
         <div className={styles.section_learn_more}>
           <h1>Want to Learn More?</h1>
           <p>Click through the sections below to see how we help our community</p>
-
-          {/* carousel */}
-          <div className={styles.carousel}>
-            <div className={styles.carousel_item}>
-              <Image
-                src={wrAbout}
-                alt="About Photo"
-
-              // blurDataURL="data:..." 
-              // placeholder="blur" // Optional blur-up while loading
-              />
-              <h2>Who We Are</h2>
-            </div>
-            <div className={styles.carousel_item}>
-              <Image
-                src={wrAbout}
-                alt="About Photo"
-
-              // blurDataURL="data:..." 
-              // placeholder="blur" // Optional blur-up while loading
-              />
-              <h2>Who Helps Us</h2>
-            </div>
-            <div className={styles.carousel_item}>
-              <Image
-                src={wrAbout}
-                alt="About Photo"
-
-              // blurDataURL="data:..." 
-              // placeholder="blur" // Optional blur-up while loading
-              />
-              <h2>How You Can Help</h2>
-            </div>
-          </div>
-
+          <LearnMore />
         </div>
 
-
-
-
-
-
-
-
-
-        {/* <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div> */}
       </main>
 
       <footer className={styles.footer}>
