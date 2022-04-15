@@ -39,17 +39,16 @@ const Home: NextPage = () => {
           </div>
           {/* !TODO!: this isnt right, fix plz */}
           <div>
-            <span className={styles.hero_btn}>
+            <a className={styles.hero_btn}>
               See how you can help
-            </span>
+            </a>
           </div>
 
         </div>
 
         <div className={styles.infobox}>
-          <div className={styles.infobox_hours}>
-
-            <div >
+          <div>
+            <div className={styles.infobox_hours}>
               <h1>We're Open</h1>
               <div className={styles.open_hours}>
                 <div>Monday</div>
@@ -75,15 +74,18 @@ const Home: NextPage = () => {
               <p>* Wake Relief will be closed on Federal Holidays.</p>
               <p>* Wake Relief follows Wake County Schools inclement weather policy. </p>
             </div>
-
             <div className={styles.phone_number}>
-              <div>
+              <span>
                 <h1> Give us a Call</h1>
                 <h2>(919) 833 - 6400</h2>
-              </div>
+              </span>
+
               <p>Please leave a message for Wake Relief and someone will return your call as soon as possible.</p>
             </div>
+
           </div>
+
+
           <div className={styles.infobox_map}>
             <div className={styles.infobox_map_meta}>
               <span>Come Find Us</span>
