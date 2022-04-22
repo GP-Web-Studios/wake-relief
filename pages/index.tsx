@@ -1,10 +1,14 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import EmblaCarousel from '../components/EmblaCarousel'
 import LearnMore from '../components/LearnMore'
 import wakeReliefLogo from '../public/wr-logo-sized.png'
 import wrAbout from '../public/wr_about.png'
 import styles from '../styles/Home.module.scss'
+
+const SLIDE_COUNT = 3;
+const slides = Array.from(Array(SLIDE_COUNT).keys());
 
 
 
@@ -114,8 +118,10 @@ const Home: NextPage = () => {
         <div className={styles.section_learn_more}>
           <h1>Want to Learn More?</h1>
           <p>Click through the sections below to see how we help our community</p>
-          <LearnMore />
+          <EmblaCarousel slides={slides} />
+        
         </div>
+
 
       </main>
 
