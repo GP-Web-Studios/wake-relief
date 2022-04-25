@@ -22,6 +22,7 @@
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
+  color: $oc-gray-6;
 
   a {
     display: flex;
@@ -48,15 +49,19 @@
   border-radius: 5px;
   color: #fff;
   min-height: 40%;
-  // padding: 6rem 4rem;
 
   div {
     padding: 1rem 3rem;
+    &:last-child{
+      margin-bottom: 2rem;
+    }
   }
 
   h1 {
     padding: 0rem 3rem;
     font-size: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 0rem;
   }
 }
 
@@ -119,8 +124,10 @@ a.hero_btn:hover {
 }
 
 .infobox_hours,
-.phone_number {
-  padding: 1.5rem;
+.phone_number, 
+.find_us
+ {
+  padding: 2rem;
 
 }
 
@@ -134,10 +141,7 @@ a.hero_btn:hover {
 
 .infobox_map_meta {
   text-align: center;
-  background-color: white;
   flex-grow: 1;
-  border: 2px solid gray;
-  border-radius: 3px;
 
   a {
     color: $oc-blue-7;

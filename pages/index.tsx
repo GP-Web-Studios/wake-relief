@@ -2,7 +2,6 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import EmblaCarousel from '../components/EmblaCarousel'
-import LearnMore from '../components/LearnMore'
 import wakeReliefLogo from '../public/wr-logo-sized.png'
 import wrAbout from '../public/wr_about.png'
 import styles from '../styles/Home.module.scss'
@@ -87,14 +86,17 @@ const Home: NextPage = () => {
 
           </div>
           <div className={styles.infobox_map_meta}>
-            <h3><b>Come Find Us</b></h3>
-            <p>Saint Savior's Center (Bottom Floor)</p>
-            <p>616 Tucker Street, <br />
-              Raleigh, NC 27603</p>
-
             <div className={styles.infobox_map}>
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3236.538822757316!2d-78.6506172841871!3d35.78670328016996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ac5f665571f4ab%3A0xaa7d85ca64e90e99!2s616%20Tucker%20St%2C%20Raleigh%2C%20NC%2027603!5e0!3m2!1sen!2sus!4v1650644999388!5m2!1sen!2sus" width="100%" height="500" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+            <div>
+              <h1>Come Find Us</h1>
+              <p>Saint Savior's Center (Bottom Floor) <br />
+                616 Tucker Street, <br />
+                Raleigh, NC 27603</p>
+            </div>
+
+
           </div>
           {/* <div className={styles.infobox_map}>
             <
@@ -126,18 +128,7 @@ const Home: NextPage = () => {
 
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+      <footer className={styles.footer}>© 2022 Wake Relief. All rights reserved.</footer>
     </div>
   )
 }
