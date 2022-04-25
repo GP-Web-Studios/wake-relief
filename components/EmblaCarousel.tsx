@@ -2,6 +2,8 @@ import React, { useState, useEffect, useCallback } from "react";
 import { PrevButton, NextButton } from "./EmblaCarouselButtons";
 import useEmblaCarousel from "embla-carousel-react";
 import { mediaByIndex } from "../media";
+import Image from 'next/image'
+
 
 const carouselContent = [
   {
@@ -45,7 +47,7 @@ const EmblaCarousel = ({ slides }: { slides: any }) => {
           {slides.map((index: number) => (
             <div className="embla__slide" key={index}>
               <div className="embla__slide__inner">
-                <img
+                <Image
                   className="embla__slide__img"
                   src={mediaByIndex(index).src}
                   alt="Wake Relief Help"

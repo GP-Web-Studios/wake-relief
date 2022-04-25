@@ -36,7 +36,7 @@ const Home: NextPage = () => {
         <div className={styles.hero_bg}>
           <h1>Providing food for <br /> Wake County Residents in Need </h1>
           <div className={styles.hero_subheader}>
-            Raleigh’s trusted all-volunteer emergency food panrty since 1975. Dedicated to helping Wake County residents in need of nutritional meals.
+            Raleigh&apos;s trusted all-volunteer emergency food panrty since 1975. Dedicated to helping Wake County residents in need of nutritional meals.
           </div>
           {/* !TODO!: setup link*/}
           <div>
@@ -50,7 +50,7 @@ const Home: NextPage = () => {
         <div className={styles.infobox}>
           <div>
             <div className={styles.infobox_hours}>
-              <h1>We're Open</h1>
+              <h1>We&apos;re Open</h1>
               <div className={styles.open_hours}>
                 <div>Monday</div>
                 <div className={styles.hours_line_spacer}></div>
@@ -87,11 +87,11 @@ const Home: NextPage = () => {
           </div>
           <div className={styles.infobox_map_meta}>
             <div className={styles.infobox_map}>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3236.538822757316!2d-78.6506172841871!3d35.78670328016996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ac5f665571f4ab%3A0xaa7d85ca64e90e99!2s616%20Tucker%20St%2C%20Raleigh%2C%20NC%2027603!5e0!3m2!1sen!2sus!4v1650644999388!5m2!1sen!2sus" width="100%" height="500" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3236.538822757316!2d-78.6506172841871!3d35.78670328016996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ac5f665571f4ab%3A0xaa7d85ca64e90e99!2s616%20Tucker%20St%2C%20Raleigh%2C%20NC%2027603!5e0!3m2!1sen!2sus!4v1650644999388!5m2!1sen!2sus" width="100%" height="500" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div>
               <h1>Come Find Us</h1>
-              <p>Saint Savior's Center (Bottom Floor) <br />
+              <p>Saint Savior&apos;s Center (Bottom Floor) <br />
                 616 Tucker Street, <br />
                 Raleigh, NC 27603</p>
             </div>
@@ -114,7 +114,7 @@ const Home: NextPage = () => {
           </div>
           <div>
             <h1>What is Wake Relief?</h1>
-            <p>Since 1975, Wake Relief has provided food to Wake County residents in emergency situations. Wake Relief DOES NOT CHARGE for the food provided. Local agencies, churches, and other outreach organizations may refer clients or individuals may reach out to us if in need. Wake Relief provides a week's worth of nutritional groceries based on the size of the family.</p>
+            <p>Since 1975, Wake Relief has provided food to Wake County residents in emergency situations. Wake Relief DOES NOT CHARGE for the food provided. Local agencies, churches, and other outreach organizations may refer clients or individuals may reach out to us if in need. Wake Relief provides a week&apos;s worth of nutritional groceries based on the size of the family.</p>
           </div>
         </div>
 
